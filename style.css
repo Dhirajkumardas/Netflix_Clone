@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    background-color: grey;
+}
+.page1 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 10px solid grey;
+    
+
+
+}
+
+.page1::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    /* margin: auto; */
+    /* align-self:center; */
+
+}
+
+.text {
+    color: rgb(228, 231, 213);
+    font-size: 1.5em;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 10px;
+
+}
+
+.head {
+    font-size: 3em;
+    /* line-height: 60px; */
+    font-weight: bolder;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 360px;
+    height: 56px;
+    background: rgba(40, 39, 39, 0.6);
+    
+
+}
+
+button {
+    background-color: red;
+    /* border: 1px solid red; */
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+    height: 60px;
+    color: aliceblue;
+    font-size: 28px;
+    left: 10px;
+
+}
+
+.nav {
+
+    /* display: flex;  */
+    position: relative;
+    width: 100%;
+    top: 15px;
+    /* border: 2px solid white; */
+    /* justify-content: space-between; */
+}
+
+.logo {
+    background-image: url(netflix.png);
+    width: 150px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    /* border: 1px solid rgb(218, 50, 50); */
+    position: relative;
+    left: 120px;
+}
+
+.navsec {
+    width: 250px;
+    height: 50px;
+    line-height: 20px;
+    /* border: 2px solid red; */
+    display: inline;
+    position: relative;
+    float: right;
+    /* display: flex; */
+    margin-top: 10px;
+    right: 120px;
+}
+
+.fa-solid {
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.lang {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 150px;
+    display: inline-block;
+    padding: 5px 0 0 5px;
+    position: relative;
+    background: rgba(40, 39, 39, 0.6);
+}
+
+select {
+    height: 30px;
+    background-color: transparent;
+    width: 80%;
+    border: none;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 15px;
+    position: relative;
+}
+
+.signin {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 50, 50);
+    /* border: 2px solid rgb(255, 0, 0); */
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    position: relative;
+
+}
+
+.signin:hover {
+    cursor: pointer;
+
+}
+
+@media (max-width: 1180px) {
+    .logo {
+        left: 50px;
+    }
+
+    .navsec {
+        right: 50px;
+    }
+
+    .head {
+        font-size: 2em;
+    }
+    .content {
+        top: 120px;
+   
+    
+    }
+}
+
+@media (max-width: 620px) {
+    .logo {
+        left: 10px;
+        width: 100px;
+        /* height: 60px; */
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+        /* border: 1px solid rgb(218, 50, 50); */
+        position: relative;
+
+    }
+
+    .navsec {
+        width: 250px;
+        height: 40px;
+        line-height: 20px;
+        /* border: 2px solid red; */
+        display: inline;
+        position: relative;
+        float: right;
+        display: flex;
+        margin-top: 10px;
+        right: 10px;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .fa-solid {
+        color: aliceblue;
+        font-size: 16px;
+        position: relative;
+
+    }
+
+    .lang {
+        /* border: 2px solid white; */
+        border-radius: 5px;
+        width: 130px;
+        display: inline-block;
+        padding: 5px 0 0 5px;
+
+    }
+
+    select {
+        height: 25px;
+        background-color: transparent;
+        width: 80%;
+        border: none;
+        color: aliceblue;
+        font-weight: bolder;
+        font-size: 14px;
+
+    }
+
+    .signin {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(218, 50, 50);
+        /* border: 2px solid rgb(255, 0, 0); */
+        padding: 10px;
+        border-radius: 5px;
+        /* margin-left: 15px; */
+
+    }
+
+    .head {
+        font-size: 2em;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 3px;
+        width: 200px;
+        /* min-width: 100px; */
+        height: 40px;
+        background: transparent;
+        /* margin-left: 30px; */
+    }
+    button {
+        background-color: red;
+        /* border: 1px solid red; */
+        border-radius: 4px;
+        width: 100px;
+        position: relative;
+        height: 43px;
+        color: aliceblue;
+        font-size: 15px;
+        left: 10px;
+    }
+    .info {
+        line-height: 20px;
+        font-size: 1em;
+    }
+
+}
+.page2{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -10;
+}
+.page2contenttext{
+    /* border: 2px solid white; */
+    color: aliceblue;
+    height: 400px;
+    width: 600px;
+    padding: 150px 0 0 50px;
+    
+}
+.page2image{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png);
+    height: 400px;
+    width: 600px;
+    /* border: 2px solid white; */
+    background-position: center;
+    background-size: cover;
+    
+   
+}
+video{
+    position: relative;
+    /* border:1px solid wheat; */
+    top: 72px;
+    left: 85px;
+    height: 240px;
+    z-index: -5;
+    
+    
+}
